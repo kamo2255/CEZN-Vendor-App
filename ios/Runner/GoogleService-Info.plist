@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>644953226034-ann06niah99bm6162rh5oioc8uar66aa.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.644953226034-ann06niah99bm6162rh5oioc8uar66aa</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>644953226034-4bjp19e1td2c40fp8v8snuriv2fn7a31.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDLrS2dJWBb5r29H1N8mI6sYliZNW-0ju8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>644953226034</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.fashionhub.vendor</string>
+	<key>PROJECT_ID</key>
+	<string>saas-6f008</string>
+	<key>STORAGE_BUCKET</key>
+	<string>saas-6f008.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:644953226034:ios:d75c42b109e5ff08d6352b</string>
+</dict>
+</plist>

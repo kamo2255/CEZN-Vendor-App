@@ -1,0 +1,251 @@
+{
+  "project_info": {
+    "project_number": "644953226034",
+    "project_id": "saas-6f008",
+    "storage_bucket": "saas-6f008.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644953226034:android:e00c1878f05370a8d6352b",
+        "android_client_info": {
+          "package_name": "com.bookingdo.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644953226034-i8tfp32q01uj2fqj81l7u7nhu772lmhs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bookingdo.user",
+            "certificate_hash": "62512c6dc85973cff98fa71f8320fbecffd6b535"
+          }
+        },
+        {
+          "client_id": "644953226034-pujnh8u380fuoti1sbqu4henh8edkrai.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bookingdo.user",
+            "certificate_hash": "122e12dfdd9065a06dd7f29311227ba86fc6fe74"
+          }
+        },
+        {
+          "client_id": "644953226034-7lprmlb9kndbmhdrmi93ngr13fm8h4so.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUZdNZc3r_8QikgbwUCy21knsFN18Og-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644953226034-24cdkd0s89pt5ar060r0blee793p12b9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644953226034:android:6f079e342e689e70d6352b",
+        "android_client_info": {
+          "package_name": "com.bookingdo.vendor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644953226034-jqu17kogb1n7hi3571udnmu4l6qevc5j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bookingdo.vendor",
+            "certificate_hash": "122e12dfdd9065a06dd7f29311227ba86fc6fe74"
+          }
+        },
+        {
+          "client_id": "644953226034-kbn0vp15e38e5f1nc17iqqq0c6v9j8vm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bookingdo.vendor",
+            "certificate_hash": "fb2171f17be5cbdb66575d77bcfa715fe62c1260"
+          }
+        },
+        {
+          "client_id": "644953226034-spk2eh1gar88ubhii2bp16f3dk90bsbg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bookingdo.vendor",
+            "certificate_hash": "a6d77c1bb0ed6547f2bb006df727a96e0c2d3c55"
+          }
+        },
+        {
+          "client_id": "644953226034-t8vptsrqq14ortmrhbhvaps4nqvue68d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bookingdo.vendor",
+            "certificate_hash": "62512c6dc85973cff98fa71f8320fbecffd6b535"
+          }
+        },
+        {
+          "client_id": "644953226034-7lprmlb9kndbmhdrmi93ngr13fm8h4so.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUZdNZc3r_8QikgbwUCy21knsFN18Og-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644953226034-24cdkd0s89pt5ar060r0blee793p12b9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644953226034:android:4df8cef501785c0cd6352b",
+        "android_client_info": {
+          "package_name": "com.fashionhub.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644953226034-7blk2iledkf6o68rh5hoc8519hoa8rd4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fashionhub.user",
+            "certificate_hash": "62512c6dc85973cff98fa71f8320fbecffd6b535"
+          }
+        },
+        {
+          "client_id": "644953226034-7lprmlb9kndbmhdrmi93ngr13fm8h4so.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUZdNZc3r_8QikgbwUCy21knsFN18Og-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644953226034-24cdkd0s89pt5ar060r0blee793p12b9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644953226034:android:333188264ee42003d6352b",
+        "android_client_info": {
+          "package_name": "com.fashionhub.vendor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644953226034-a11bvkujoogte5gcjnupck6bgpvgro25.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fashionhub.vendor",
+            "certificate_hash": "fb2171f17be5cbdb66575d77bcfa715fe62c1260"
+          }
+        },
+        {
+          "client_id": "644953226034-ga99t4nvn0skqlqvge5b0k877dii7flu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fashionhub.vendor",
+            "certificate_hash": "62512c6dc85973cff98fa71f8320fbecffd6b535"
+          }
+        },
+        {
+          "client_id": "644953226034-ksapjfl9sqn17eo3h37bbnbhktlrjoh7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fashionhub.vendor",
+            "certificate_hash": "122e12dfdd9065a06dd7f29311227ba86fc6fe74"
+          }
+        },
+        {
+          "client_id": "644953226034-nkbq72fo2hrcseltll9dfrsmkchfate7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fashionhub.vendor",
+            "certificate_hash": "a6d77c1bb0ed6547f2bb006df727a96e0c2d3c55"
+          }
+        },
+        {
+          "client_id": "644953226034-7lprmlb9kndbmhdrmi93ngr13fm8h4so.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUZdNZc3r_8QikgbwUCy21knsFN18Og-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644953226034-24cdkd0s89pt5ar060r0blee793p12b9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644953226034:android:788b1ed4564c1974d6352b",
+        "android_client_info": {
+          "package_name": "com.storemart.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644953226034-r0nb7d003sl9nol8uus062pbtpi3eijl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.storemart.user",
+            "certificate_hash": "62512c6dc85973cff98fa71f8320fbecffd6b535"
+          }
+        },
+        {
+          "client_id": "644953226034-7lprmlb9kndbmhdrmi93ngr13fm8h4so.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUZdNZc3r_8QikgbwUCy21knsFN18Og-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644953226034-24cdkd0s89pt5ar060r0blee793p12b9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

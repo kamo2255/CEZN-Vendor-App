@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "644953226034",
+    "project_id": "saas-6f008",
+    "storage_bucket": "saas-6f008.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644953226034:android:333188264ee42003d6352b",
+        "android_client_info": {
+          "package_name": "com.fashionhub.vendor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644953226034-nkbq72fo2hrcseltll9dfrsmkchfate7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fashionhub.vendor",
+            "certificate_hash": "a6d77c1bb0ed6547f2bb006df727a96e0c2d3c55"
+          }
+        },
+        {
+          "client_id": "644953226034-24cdkd0s89pt5ar060r0blee793p12b9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUZdNZc3r_8QikgbwUCy21knsFN18Og-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644953226034-24cdkd0s89pt5ar060r0blee793p12b9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

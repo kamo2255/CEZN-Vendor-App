@@ -1,0 +1,33 @@
+class FashionHubImages {
+  static const String imgAboutUs = "assets/images/img_about_us.png";
+  static const String imgAddress = "assets/images/img_address.png";
+  static const String imgArabic = "assets/images/img_arabic.png";
+  static const String imgCall = "assets/images/img_call.png";
+  static const String imgCamera = "assets/images/img_camera.png";
+  static const String imgCancelOrders = "assets/images/img_cancel_orders.png";
+  static const String imgChat = "assets/images/img_chat.png";
+  static const String imgCompleteOrders = "assets/images/img_complete_orders.png";
+  static const String imgDarkMode = "assets/images/img_dark_mode.png";
+  static const String imgDelete = "assets/images/img_delete.png";
+  static const String imgDownload = "assets/images/img_download.png";
+  static const String imgEdit = "assets/images/img_edit.png";
+  static const String imgEmail = "assets/images/img_email.png";
+  static const String imgEnglish = "assets/images/img_english.png";
+  static const String imgEye = "assets/images/img_eye.png";
+  static const String imgEyeSlash = "assets/images/img_eye_slash.png";
+  static const String imgFilter = "assets/images/img_filter.png";
+  static const String imgGallery = "assets/images/img_gallery.png";
+  static const String imgHome = "assets/images/img_home.png";
+  static const String imgLanguage = "assets/images/img_language.png";
+  static const String imgLogo = "assets/images/img_logo.png";
+  static const String imgLogout = "assets/images/img_logout.png";
+  static const String imgName = "assets/images/img_name.png";
+  static const String imgOrders = "assets/images/img_orders.png";
+  static const String imgOrderStatus = "assets/images/img_order_status.png";
+  static const String imgPassword = "assets/images/img_password.png";
+  static const String imgPaymentStatus = "assets/images/img_payment_status.png";
+  static const String imgPlaceholder = "assets/images/img_placeholder.png";
+  static const String imgPrivacyPolicy = "assets/images/img_privacy_policy.png";
+  static const String imgRevenue = "assets/images/img_revenue.png";
+  static const String imgTotalOrders = "assets/images/img_total_orders.png";
+}
