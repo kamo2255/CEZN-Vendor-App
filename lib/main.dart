@@ -82,12 +82,11 @@ class Myapp extends StatefulWidget {
 }
 
 class _MyappState extends State<Myapp> {
-  final themeData = Get.put(ThemeController());
-
   @override
   Widget build(BuildContext context) {
     return Sizer(
       builder: (context, orientation, deviceType) {
+        final themeData = Get.put(ThemeController());
         return GetMaterialApp(
             scrollBehavior: MyBehavior(),
             debugShowCheckedModeBanner: false,

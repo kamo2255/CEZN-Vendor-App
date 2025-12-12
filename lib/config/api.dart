@@ -1,6 +1,6 @@
 class DefaultApi {
   // static String baseUrl = "DOMAIN_URL";
-  static String baseUrl = "https://fashionhub.paponapps.co.in/";
+  static String baseUrl = "https://cezn.website/";
   static String apiUrl = "${baseUrl}api/";
 }
 
