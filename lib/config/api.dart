@@ -25,6 +25,32 @@ class PostApi {
   static String changePasswordApi = "changepassword";
   static String inquiriesApi = "inquiries";
   static String deleteVendorApi = "deletevendor";
+
+  // Product APIs
+  static String productsApi = "products";
+  static String addProductApi = "addproduct";
+  static String updateProductApi = "updateproduct";
+  static String deleteProductApi = "deleteproduct";
+  static String productDetailsApi = "productdetail";
+  static String categoriesApi = "categories";
+
+  // Reports APIs
+  static String reportsApi = "reports";
+
+  // Transactions APIs
+  static String transactionsApi = "transactions";
+
+  // Coupons APIs
+  static String couponsApi = "coupons";
+  static String addCouponApi = "addcoupon";
+  static String updateCouponApi = "updatecoupon";
+  static String deleteCouponApi = "deletecoupon";
+
+  // Top Deals APIs
+  static String dealsApi = "deals";
+  static String addDealApi = "adddeal";
+  static String updateDealApi = "updatedeal";
+  static String deleteDealApi = "deletedeal";
 }
 
 class GetApi {

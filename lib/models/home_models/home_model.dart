@@ -14,6 +14,7 @@ class HomeModel {
   dynamic decimalSeparator;
   dynamic currencySpace;
   dynamic currencyFormate;
+  dynamic storeName;
 
   HomeModel({this.status,
     this.message,
@@ -30,6 +31,7 @@ class HomeModel {
     this.decimalSeparator,
     this.currencySpace,
     this.currencyFormate,
+    this.storeName,
   });
 
   HomeModel.fromJson(Map<String, dynamic> json) {
@@ -53,6 +55,7 @@ class HomeModel {
     decimalSeparator = json['decimal_separator'];
     currencySpace = json['currency_space'];
     currencyFormate = json['currency_formate'];
+    storeName = json['store_name'];
   }
 
   Map<String, dynamic> toJson() {
@@ -74,6 +77,7 @@ class HomeModel {
     data['decimal_separator'] = decimalSeparator;
     data['currency_space'] = currencySpace;
     data['currency_formate'] = currencyFormate;
+    data['store_name'] = storeName;
     return data;
   }
 }

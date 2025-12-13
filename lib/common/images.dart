@@ -30,4 +30,6 @@ class FashionHubImages {
   static const String imgPrivacyPolicy = "assets/images/img_privacy_policy.png";
   static const String imgRevenue = "assets/images/img_revenue.png";
   static const String imgTotalOrders = "assets/images/img_total_orders.png";
+  static const String imgReports = "assets/images/img_reports.png";
+  static const String imgTransactions = "assets/images/img_transactions.png";
 }

@@ -5,6 +5,11 @@ import 'package:fashionhub_saas_vendor_flutter_app/common/fonts.dart';
 import 'package:fashionhub_saas_vendor_flutter_app/common/images.dart';
 import 'package:fashionhub_saas_vendor_flutter_app/pages/home_pages/home_page.dart';
 import 'package:fashionhub_saas_vendor_flutter_app/pages/history_pages/orderhistory_page.dart';
+import 'package:fashionhub_saas_vendor_flutter_app/pages/product_pages/products_page.dart';
+import 'package:fashionhub_saas_vendor_flutter_app/pages/report_pages/reports_page.dart';
+import 'package:fashionhub_saas_vendor_flutter_app/pages/transaction_pages/transactions_page.dart';
+import 'package:fashionhub_saas_vendor_flutter_app/pages/coupon_pages/coupons_page.dart';
+import 'package:fashionhub_saas_vendor_flutter_app/pages/deal_pages/deals_page.dart';
 import 'package:fashionhub_saas_vendor_flutter_app/pages/profile_pages/profile_page.dart';
 import 'package:fashionhub_saas_vendor_flutter_app/theme/theme_controller.dart';
 import 'package:flutter/material.dart';
@@ -67,7 +72,18 @@ class _DashboardPageState extends State<DashboardPage> {
     setState(() {
       selectIndex = value;
     });
-    pageController.jumpToPage(value);
+    // Map bottom nav index to page index
+    // Bottom nav: 0=Home, 1=Products, 2=Orders, 3=Profile
+    // Pages: 0=Home, 1=Orders, 2=Products, 3=Reports, 4=Transactions, 5=Coupons, 6=Deals, 7=Profile
+    int pageIndex = value;
+    if (value == 1) {
+      pageIndex = 2; // Products
+    } else if (value == 2) {
+      pageIndex = 1; // Orders
+    } else if (value == 3) {
+      pageIndex = 7; // Profile
+    }
+    pageController.jumpToPage(pageIndex);
   }
 
   @override
@@ -83,7 +99,7 @@ class _DashboardPageState extends State<DashboardPage> {
               PageView(
             physics: const NeverScrollableScrollPhysics(),
             controller: pageController,
-            children: const [HomePage(), OrderHistoryPage(), ProfilePage()],
+            children: const [HomePage(), OrderHistoryPage(), ProductsPage(), ReportsPage(), TransactionsPage(), CouponsPage(), DealsPage(), ProfilePage()],
           ),
           bottomNavigationBar: BottomNavigationBar(
             backgroundColor: themeData.isDark ? FashionHubColors.blackColor : FashionHubColors.lightGreyColor,
@@ -99,6 +115,19 @@ class _DashboardPageState extends State<DashboardPage> {
                   FashionHubImages.imgHome,
                   color: FashionHubColors.primaryColor,
                   height: height/36,
+                ),
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.inventory_2_outlined,
+                  color: themeData.isDark ? FashionHubColors.whiteColor : FashionHubColors.blackColor,
+                  size: height/36,
+                ),
+                label: "str_products".tr,
+                activeIcon: Icon(
+                  Icons.inventory_2,
+                  color: FashionHubColors.primaryColor,
+                  size: height/36,
                 ),
               ),
               BottomNavigationBarItem(

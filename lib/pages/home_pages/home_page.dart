@@ -10,6 +10,10 @@ import 'package:fashionhub_saas_vendor_flutter_app/config/network/internetcheck.
 import 'package:fashionhub_saas_vendor_flutter_app/models/home_models/home_model.dart';
 import 'package:fashionhub_saas_vendor_flutter_app/pages/history_pages/orderdetails_page.dart';
 import 'package:fashionhub_saas_vendor_flutter_app/pages/home_pages/dashboard_page.dart';
+import 'package:fashionhub_saas_vendor_flutter_app/pages/report_pages/reports_page.dart';
+import 'package:fashionhub_saas_vendor_flutter_app/pages/transaction_pages/transactions_page.dart';
+import 'package:fashionhub_saas_vendor_flutter_app/pages/coupon_pages/coupons_page.dart';
+import 'package:fashionhub_saas_vendor_flutter_app/pages/deal_pages/deals_page.dart';
 import 'package:fashionhub_saas_vendor_flutter_app/theme/theme_controller.dart';
 import 'package:fashionhub_saas_vendor_flutter_app/widgets/loader.dart';
 import 'package:fashionhub_saas_vendor_flutter_app/widgets/dialogbox.dart';
@@ -68,6 +72,9 @@ class _HomePageState extends State<HomePage> {
           pref.setString(adminEmailPreference, responseData!.adminEmail.toString());
           pref.setString (adminMobilePreference, responseData!.adminMobile.toString());
           pref.setString(adminAddressPreference, responseData!.adminAddress.toString());
+          if (responseData!.storeName != null) {
+            pref.setString('store_name', responseData!.storeName.toString());
+          }
           pref.setInt(currencyFormatPreference, responseData!.currencyFormate);
           pref.setInt(decimalSeparatorPreference, responseData!.decimalSeparator);
           pref.setInt(currencySpacePreference, responseData!.currencySpace);
@@ -106,17 +113,17 @@ class _HomePageState extends State<HomePage> {
 
       },isCachesEnable: true,child: Scaffold(
       resizeToAvoidBottomInset: false,
+        drawer: _buildDrawer(),
         appBar: AppBar(
           surfaceTintColor: FashionHubColors.lightPrimaryColor,
           backgroundColor: FashionHubColors.lightPrimaryColor,
-          automaticallyImplyLeading: false,
-          title:  Row(
-            children: [
-              Text(
-                "str_dashboard".tr,
-                style: boldFont.copyWith(fontSize: 20.sp),
-              ),
-            ],
+          automaticallyImplyLeading: true,
+          iconTheme: IconThemeData(
+            color: themeData.isDark ? FashionHubColors.whiteColor : FashionHubColors.blackColor,
+          ),
+          title: Text(
+            "str_dashboard".tr,
+            style: boldFont.copyWith(fontSize: 20.sp),
           ),
           actions: [
             PopupMenuButton<int>(
@@ -207,6 +214,18 @@ class _HomePageState extends State<HomePage> {
                   ? FashionHubColors.whiteColor
                   : FashionHubColors.blackColor,
               iconSize: 25,
+            ),
+            IconButton(
+              icon: Icon(
+                themeData.isDark ? Icons.light_mode : Icons.dark_mode,
+                color: themeData.isDark
+                    ? FashionHubColors.whiteColor
+                    : FashionHubColors.blackColor,
+              ),
+              onPressed: () {
+                themeData.changeThem(!themeData.isDark);
+              },
+              tooltip: themeData.isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode',
             ),
           ],
         ),
@@ -663,6 +682,95 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
           ),
+    );
+  }
+
+  Widget _buildDrawer() {
+    return Drawer(
+      backgroundColor: themeData.isDark ? FashionHubColors.darkModeColor : FashionHubColors.whiteColor,
+      child: ListView(
+        padding: EdgeInsets.zero,
+        children: [
+          DrawerHeader(
+            decoration: BoxDecoration(
+              color: FashionHubColors.lightPrimaryColor,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Text(
+                  responseData?.storeName ?? "str_store_name".tr,
+                  style: boldFont.copyWith(
+                    fontSize: 20.sp,
+                    color: FashionHubColors.whiteColor,
+                  ),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                SizedBox(height: height / 100),
+                Text(
+                  "str_menu".tr,
+                  style: regularFont.copyWith(
+                    fontSize: 12.sp,
+                    color: FashionHubColors.whiteColor,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          _buildDrawerItem(
+            icon: Icons.bar_chart_outlined,
+            title: "str_reports".tr,
+            onTap: () {
+              Navigator.pop(context);
+              Get.to(() => const ReportsPage());
+            },
+          ),
+          _buildDrawerItem(
+            icon: Icons.receipt_long_outlined,
+            title: "str_transactions".tr,
+            onTap: () {
+              Navigator.pop(context);
+              Get.to(() => const TransactionsPage());
+            },
+          ),
+          _buildDrawerItem(
+            icon: Icons.local_offer_outlined,
+            title: "str_coupons".tr,
+            onTap: () {
+              Navigator.pop(context);
+              Get.to(() => const CouponsPage());
+            },
+          ),
+          _buildDrawerItem(
+            icon: Icons.local_fire_department_outlined,
+            title: "str_top_deals".tr,
+            onTap: () {
+              Navigator.pop(context);
+              Get.to(() => const DealsPage());
+            },
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildDrawerItem({
+    required IconData icon,
+    required String title,
+    required VoidCallback onTap,
+  }) {
+    return ListTile(
+      leading: Icon(
+        icon,
+        color: themeData.isDark ? FashionHubColors.whiteColor : FashionHubColors.blackColor,
+      ),
+      title: Text(
+        title,
+        style: mediumFont.copyWith(fontSize: 14.sp),
+      ),
+      onTap: onTap,
     );
   }
 }
